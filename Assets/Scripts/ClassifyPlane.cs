@@ -11,7 +11,7 @@ public class ClassifyPlane : MonoBehaviour
 
     public MeshRenderer planeMeshRenderer;
 
-    public TextMeshPro text;
+    public TextMesh text;
 
     public GameObject textObj;
 
@@ -20,7 +20,7 @@ public class ClassifyPlane : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mainCam = FindAnyObjectByType<Camera>().gameObject;
+        mainCam = FindObjectOfType<Camera>().gameObject; 
     }
 
     // Update is called once per frame
